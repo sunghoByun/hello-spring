@@ -18,7 +18,7 @@ import java.util.Optional;
 public class JdbcTemplateMemberRepository implements MemberRepository {
 
     private final JdbcTemplate jdbcTemplate;
-
+    //test 추가
     @Autowired //생성자가 하나로 되어있으면 Autowired 생략할 수 있다
     public JdbcTemplateMemberRepository(DataSource dataSource) {
         jdbcTemplate = new JdbcTemplate(dataSource);
